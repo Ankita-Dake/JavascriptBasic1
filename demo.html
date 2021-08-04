@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <!-- JS can change html content -->
+        <h2>What Can JavaScript Do?</h2>
+        <p id="demo">JavaScript can change HTML content.</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+         <!-- JS can change html content with function -->
+         <p id="demo1">JS can change HTML content with function .</p>
+
+         <button type="button" onclick='myFunc()'>Click</button>
+         
+         <script>
+         function myFunc() {
+         document.getElementById("demo1").innerHTML= "Hello World"}
+         </script>
+        <br>
+
+
+        <!-- JS can change html attributes value --> 
+        <p id="demo2">JS can change HTML attributes value .</p>
+        <button onclick="document.getElementById('demo2').src ='img.jpg'">Image 1</button>
+        <img id="demo2" src="img.jpg" style="width:100px">
+        <button onclick="document.getElementById('demo2').src ='img2.jpg'">Image 2</button>
+
+         <!-- JS can change html style --> 
+        <p id="demo3">JS Can change CSS</p>
+        <button type="button" onclick="myFunction()">Click to Change Style</button>
+        <script>
+        function myFunction() {
+        document.getElementById('demo3').style.fontSize = '35px';
+        document.getElementById('demo3').style.color = 'red';
+        }
+        </script>
+
+        <!-- JS can hide html element --> 
+        <p id="demo4">JavaScript can hide HTML elements.</p>
+        <button type="button" onclick="document.getElementById('demo4').style.display='none'">Click Me!</button>
+
+        <!-- JS can  show hide html element --> 
+        <p>JavaScript can show hidden HTML elements.</p>
+        <p id="demo5" style="display:none">Hello JavaScript!</p>
+        <button type="button" onclick="document.getElementById('demo5').style.display='block'">Click Me!</button>
+
+    </body>
+</html>
